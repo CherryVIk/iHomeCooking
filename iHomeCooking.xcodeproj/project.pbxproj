@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6812B80B850C56ED9A7EB4E2 /* Pods_iHomeCooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05A7EE8AB97B5798A439C1 /* Pods_iHomeCooking.framework */; };
 		D15F98F924F0FE1B007B3749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F98F824F0FE1B007B3749 /* AppDelegate.swift */; };
 		D15F98FB24F0FE1B007B3749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F98FA24F0FE1B007B3749 /* SceneDelegate.swift */; };
-		D15F98FD24F0FE1B007B3749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F98FC24F0FE1B007B3749 /* ViewController.swift */; };
+		D15F98FD24F0FE1B007B3749 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F98FC24F0FE1B007B3749 /* CategoriesController.swift */; };
 		D15F990024F0FE1B007B3749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15F98FE24F0FE1B007B3749 /* Main.storyboard */; };
 		D15F990224F0FE1D007B3749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15F990124F0FE1D007B3749 /* Assets.xcassets */; };
 		D15F990524F0FE1D007B3749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15F990324F0FE1D007B3749 /* LaunchScreen.storyboard */; };
+		D15F990F24F0FFC9007B3749 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F990E24F0FFC9007B3749 /* ItemsController.swift */; };
+		D162145624F1B7CD00328962 /* ItemImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162145524F1B7CD00328962 /* ItemImageViewController.swift */; };
+		D162145824F241BF00328962 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D162145724F241BF00328962 /* MobileNetV2.mlmodel */; };
+		D162145A24F243AB00328962 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162145924F243AB00328962 /* Category.swift */; };
+		D162145D24F2443500328962 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162145C24F2443500328962 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65C4E4149B83C34F43A34D5F /* Pods-iHomeCooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHomeCooking.release.xcconfig"; path = "Target Support Files/Pods-iHomeCooking/Pods-iHomeCooking.release.xcconfig"; sourceTree = "<group>"; };
+		BD4DF872052B98EDD7052F3C /* Pods-iHomeCooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHomeCooking.debug.xcconfig"; path = "Target Support Files/Pods-iHomeCooking/Pods-iHomeCooking.debug.xcconfig"; sourceTree = "<group>"; };
 		D15F98F524F0FE1B007B3749 /* iHomeCooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHomeCooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15F98F824F0FE1B007B3749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15F98FA24F0FE1B007B3749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D15F98FC24F0FE1B007B3749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D15F98FC24F0FE1B007B3749 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
 		D15F98FF24F0FE1B007B3749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D15F990124F0FE1D007B3749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15F990424F0FE1D007B3749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15F990624F0FE1D007B3749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15F990E24F0FFC9007B3749 /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
+		D162145524F1B7CD00328962 /* ItemImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageViewController.swift; sourceTree = "<group>"; };
+		D162145724F241BF00328962 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		D162145924F243AB00328962 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D162145C24F2443500328962 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FE05A7EE8AB97B5798A439C1 /* Pods_iHomeCooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHomeCooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6812B80B850C56ED9A7EB4E2 /* Pods_iHomeCooking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E75ADFC8731B26647D2811F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD4DF872052B98EDD7052F3C /* Pods-iHomeCooking.debug.xcconfig */,
+				65C4E4149B83C34F43A34D5F /* Pods-iHomeCooking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C11BC7EFE332251BA04BFDDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE05A7EE8AB97B5798A439C1 /* Pods_iHomeCooking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D15F98EC24F0FE1B007B3749 = {
 			isa = PBXGroup;
 			children = (
 				D15F98F724F0FE1B007B3749 /* iHomeCooking */,
 				D15F98F624F0FE1B007B3749 /* Products */,
+				6E75ADFC8731B26647D2811F /* Pods */,
+				C11BC7EFE332251BA04BFDDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +92,42 @@
 			children = (
 				D15F98F824F0FE1B007B3749 /* AppDelegate.swift */,
 				D15F98FA24F0FE1B007B3749 /* SceneDelegate.swift */,
-				D15F98FC24F0FE1B007B3749 /* ViewController.swift */,
-				D15F98FE24F0FE1B007B3749 /* Main.storyboard */,
+				D162145B24F2441D00328962 /* Models */,
+				D15F990D24F0FF8E007B3749 /* Views */,
+				D15F990C24F0FF7E007B3749 /* Controllers */,
 				D15F990124F0FE1D007B3749 /* Assets.xcassets */,
 				D15F990324F0FE1D007B3749 /* LaunchScreen.storyboard */,
 				D15F990624F0FE1D007B3749 /* Info.plist */,
+				D162145724F241BF00328962 /* MobileNetV2.mlmodel */,
 			);
 			path = iHomeCooking;
+			sourceTree = "<group>";
+		};
+		D15F990C24F0FF7E007B3749 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D15F98FC24F0FE1B007B3749 /* CategoriesController.swift */,
+				D15F990E24F0FFC9007B3749 /* ItemsController.swift */,
+				D162145524F1B7CD00328962 /* ItemImageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D15F990D24F0FF8E007B3749 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D15F98FE24F0FE1B007B3749 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D162145B24F2441D00328962 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D162145924F243AB00328962 /* Category.swift */,
+				D162145C24F2443500328962 /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D15F990924F0FE1D007B3749 /* Build configuration list for PBXNativeTarget "iHomeCooking" */;
 			buildPhases = (
+				BA481FE76EA51A2D4BDBF2C3 /* [CP] Check Pods Manifest.lock */,
 				D15F98F124F0FE1B007B3749 /* Sources */,
 				D15F98F224F0FE1B007B3749 /* Frameworks */,
 				D15F98F324F0FE1B007B3749 /* Resources */,
+				DB1985E59E8F21B5F592B0F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +198,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA481FE76EA51A2D4BDBF2C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHomeCooking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1985E59E8F21B5F592B0F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iHomeCooking/Pods-iHomeCooking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iHomeCooking/Pods-iHomeCooking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iHomeCooking/Pods-iHomeCooking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D15F98F124F0FE1B007B3749 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15F98FD24F0FE1B007B3749 /* ViewController.swift in Sources */,
+				D162145824F241BF00328962 /* MobileNetV2.mlmodel in Sources */,
+				D162145624F1B7CD00328962 /* ItemImageViewController.swift in Sources */,
+				D15F98FD24F0FE1B007B3749 /* CategoriesController.swift in Sources */,
 				D15F98F924F0FE1B007B3749 /* AppDelegate.swift in Sources */,
+				D162145D24F2443500328962 /* Item.swift in Sources */,
+				D15F990F24F0FFC9007B3749 /* ItemsController.swift in Sources */,
 				D15F98FB24F0FE1B007B3749 /* SceneDelegate.swift in Sources */,
+				D162145A24F243AB00328962 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +394,7 @@
 		};
 		D15F990A24F0FE1D007B3749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4DF872052B98EDD7052F3C /* Pods-iHomeCooking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +413,7 @@
 		};
 		D15F990B24F0FE1D007B3749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C4E4149B83C34F43A34D5F /* Pods-iHomeCooking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

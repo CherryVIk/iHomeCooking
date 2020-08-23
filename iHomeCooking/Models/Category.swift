@@ -11,8 +11,8 @@ import RealmSwift
 
 class Category: Object {
     @objc dynamic var name: String = ""
-    @objc dynamic var amount: Int?
-    @objc dynamic var price: Float?
+    @objc dynamic var amount: Double = 0
+    @objc dynamic var price: Double = 0
     
     var items = List<Item>()
 }

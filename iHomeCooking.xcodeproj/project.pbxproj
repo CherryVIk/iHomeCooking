@@ -92,13 +92,11 @@
 			children = (
 				D15F98F824F0FE1B007B3749 /* AppDelegate.swift */,
 				D15F98FA24F0FE1B007B3749 /* SceneDelegate.swift */,
+				D15F990624F0FE1D007B3749 /* Info.plist */,
 				D162145B24F2441D00328962 /* Models */,
 				D15F990D24F0FF8E007B3749 /* Views */,
 				D15F990C24F0FF7E007B3749 /* Controllers */,
-				D15F990124F0FE1D007B3749 /* Assets.xcassets */,
-				D15F990324F0FE1D007B3749 /* LaunchScreen.storyboard */,
-				D15F990624F0FE1D007B3749 /* Info.plist */,
-				D162145724F241BF00328962 /* MobileNetV2.mlmodel */,
+				D162145E24F2478600328962 /* Supportive Files */,
 			);
 			path = iHomeCooking;
 			sourceTree = "<group>";
@@ -124,10 +122,20 @@
 		D162145B24F2441D00328962 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D162145724F241BF00328962 /* MobileNetV2.mlmodel */,
 				D162145924F243AB00328962 /* Category.swift */,
 				D162145C24F2443500328962 /* Item.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D162145E24F2478600328962 /* Supportive Files */ = {
+			isa = PBXGroup;
+			children = (
+				D15F990324F0FE1D007B3749 /* LaunchScreen.storyboard */,
+				D15F990124F0FE1D007B3749 /* Assets.xcassets */,
+			);
+			path = "Supportive Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

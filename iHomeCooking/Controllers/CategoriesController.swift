@@ -7,39 +7,52 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CategoriesController: UITableViewController {
-
-    var categories = ["01","02","03"]
-
-       override func viewDidLoad() {
-           super.viewDidLoad()
-
-           // Uncomment the following line to preserve selection between presentations
-           // self.clearsSelectionOnViewWillAppear = false
-
+    
+    //    var categories = ["01","02","03"]
+    let realm = try! Realm()
+    var categories: Results<Category>?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadCategories()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+        
+    }
+    
+    // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories?.count ?? 1
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryID", for: indexPath)
+        
+        cell.textLabel?.text = categories?[indexPath.row].name ?? "Nothing was entered"
+        
+        return cell
+    }
+    
+    //MARK: - Tableview Delegate Methods
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToItems", sender: self)
+    }
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if segue.identifier == "GoToItems" {
+           let destinationVC = segue.destination as! ItemsController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                      destinationVC.selectedCategory = categories?[indexPath.row]
+                  }
        }
-
-       // MARK: - Table view data source
-
-       override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return categories.count
-       }
-
-      
-       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = tableView.dequeueReusableCell(withIdentifier: "categoryID", for: indexPath)
-
-           cell.textLabel?.text = categories[indexPath.row]
-
-           return cell
-       }
-       
-       override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           performSegue(withIdentifier: "GoToItems", sender: self)
-       }
-      
-//MARK: - Adding New Categories
+    }
+    
+    //MARK: - Adding New Categories
     
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
@@ -48,27 +61,33 @@ class CategoriesController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Add category", style: .default, handler: { (action) in
             let textField = alert.textFields![0]
             if textField.text?.count != 0 {
-                self.categories.append(textField.text!)
-                self.tableView.reloadData()
+                let newCategory = Category()
+                newCategory.name = textField.text!
+                self.saveCategories(newCategory)
             }
             
         }))
         present(alert, animated: true, completion: nil)
     }
     
+    //MARK: - Data Manipulation Methods
+    func saveCategories(_ category : Category){
+        do {
+            try realm.write {
+                realm.add(category)
+            }
+        } catch  {
+            print("Error adding category in realm")
+        }
+        tableView.reloadData()
+    }
     
+    func loadCategories(){
+        categories = realm.objects(Category.self)
+        tableView.reloadData()
+    }
     
-       /*
-       // MARK: - Navigation
 
-       // In a storyboard-based application, you will often want to do a little preparation before navigation
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           // Get the new view controller using segue.destination.
-           // Pass the selected object to the new view controller.
-       }
-       */
-
-
-
+    
 }
 
